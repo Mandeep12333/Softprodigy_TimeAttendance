@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GantnerMe.LoginPage" BackgroundImage="select_language_bg.png">
+
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <OnPlatform x:Key="FontFamily" x:TypeArguments="x:String">
+        <OnPlatform.Android>Droid Sans Mono</OnPlatform.Android>
+        <OnPlatform.WinPhone>Comic Sans MS</OnPlatform.WinPhone>
+      </OnPlatform>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+            iOS="10,5,10,10"
+            Android="10,0,10,10"
+            WinPhone="20,20,20,20"/>
+  </ContentPage.Padding>
+
+  <ContentPage.Content>
+    <ScrollView>
+
+      <RelativeLayout>
+        <Image Margin="10,40,10,0" Source="inner_box.png" Aspect="AspectFit"
+                    RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                    RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+        </Image>
+
+        <StackLayout Margin="10,10,10,50" AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0,0,1,1" Spacing="20"
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="CenterAndExpand">
+
+          <Image  Source="inner_logo.png" HorizontalOptions="CenterAndExpand"
+         HeightRequest="50" Aspect="AspectFit" WidthRequest="80">
+            <Image.Margin>
+              <OnPlatform x:TypeArguments="Thickness"
+                                  iOS="0,10,50,10"
+                                  Android="10,10,10,10"
+                                  WinPhone="10,10,10,10" />
+            </Image.Margin>
+          </Image>
+          
+          <Image Source="inner_logo.png"  HorizontalOptions="Center"
+                 x:Name="imgapilogo"
+                 HeightRequest="50" Aspect="AspectFit"
+                 WidthRequest="120">
+            <Image.Margin>
+              <OnPlatform x:TypeArguments="Thickness"
+                                  iOS="0,-10,40,10"
+                                  Android="10,-10,10,10"
+                                  WinPhone="10,-10,10,10" />
+            </Image.Margin>
+          </Image>
+
+          <StackLayout  Margin="0,-30,5,20">
+            <Label Text="gdf gfdg"  x:Name="lblcompanyname"
+                   FontFamily="{StaticResource FontFamily}"
+                   HorizontalOptions="Center" FontSize="20" TextColor="#2F6686">
+              <Label.Margin>
+                <OnPlatform x:TypeArguments="Thickness"
+                                    iOS="0,10,40,0"
+                                    Android="0,0,0,0"
+                                    WinPhone="0,0,0,0" />
+              </Label.Margin>
+            </Label>
+          </StackLayout>
+          <StackLayout   WidthRequest="300"  HorizontalOptions="Center"
+                                       Spacing="20">
+            <StackLayout.Margin>
+              <OnPlatform x:TypeArguments="Thickness"
+                                  iOS="30,10,0,0"
+                                  Android="30,20,0,0"
+                                  WinPhone="30,-10,0,0" />
+            </StackLayout.Margin>
+
+            <Label Margin="5,0,0,0" FontAttributes="Bold" x:Name="lblcredentialsName"
+                   Text="Enter Login Credentials"
+                    FontFamily="{StaticResource FontFamily}"
+                    HorizontalOptions="StartAndExpand" FontSize="18"
+                    TextColor="#2F6686"></Label>
+            <StackLayout Margin="-10,0,0,0" VerticalOptions="Center" HorizontalOptions="Center"
+                         WidthRequest="330"
+                         Orientation="Horizontal">
+
+              <Entry Margin="5,10,10,0"  x:Name="txtUserName"
+                    Text="admin"   Keyboard="Default">
+                <Entry.WidthRequest>
+                  <OnPlatform x:TypeArguments="x:Double" Android="280"
+                              iOS="240" WinPhone="280"/>
+                </Entry.WidthRequest>
+                <Entry.TextColor>
+                  <OnPlatform x:TypeArguments="Color"
+                      iOS="#2F6686"
+                       WinPhone="#2F6686"
+                      Android="#2F6686">
+                  </OnPlatform>
+                </Entry.TextColor>
+                <Entry.PlaceholderColor>
+                  <OnPlatform x:TypeArguments="Color"
+                      iOS="#174A8B"
+                       WinPhone="#174A8B"
+                      Android="#174A8B">
+                  </OnPlatform>
+                </Entry.PlaceholderColor>
+              </Entry>
+              <Image Source="username.png"
+                     WidthRequest="20" HeightRequest="20"
+                     HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                <Image.Margin>
+                  <OnPlatform x:TypeArguments="Thickness"
+                                      iOS="-100,10,0,0"
+                                      Android="-55,10,0,0"
+                                      WinPhone="-55,10,0,0" />
+                </Image.Margin>
+              </Image>
+            </StackLayout>
+            <BoxView  x:Name="boxviewusername" HeightRequest="1" WidthRequest="1"
+             BackgroundColor="#2F6686"
+             Margin="0,-25,26,0"></BoxView>
+
+            <StackLayout Margin="-10,0,0,0" VerticalOptions="Center"
+                         HorizontalOptions="Start" Orientation="Horizontal">
+              <Entry   x:Name="txtpassword" Text="GAT123"
+                      IsPassword="True"
+                     Keyboard="Default" >
+                <Entry.Margin>
+                  <OnPlatform x:TypeArguments="Thickness"
+                                      iOS="5,10,30,0"
+                                      Android="10,10,0,0"
+                                      WinPhone="5,10,10,0" />
+                </Entry.Margin>
+                <Entry.WidthRequest>
+                  <OnPlatform x:TypeArguments="x:Double" Android="280" iOS="240"
+                              WinPhone="280"/>
+                </Entry.WidthRequest>
+                <Entry.TextColor>
+                  <OnPlatform x:TypeArguments="Color"
+                      iOS="#2F6686"
+                       WinPhone="#2F6686"
+                      Android="#2F6686">
+                  </OnPlatform>
+                </Entry.TextColor>
+                <Entry.PlaceholderColor>
+                  <OnPlatform x:TypeArguments="Color"
+                      iOS="#174A8B"
+                       WinPhone="#174A8B"
+                      Android="#174A8B">
+                  </OnPlatform>
+                </Entry.PlaceholderColor>
+              </Entry>
+              <Image Source="password.png"
+                     WidthRequest="20" HeightRequest="20"
+                     HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="Center">
+                <Image.Margin>
+                  <OnPlatform x:TypeArguments="Thickness"
+                                      iOS="-60,10,0,0"
+                                      Android="-28,10,0,0"
+                                      WinPhone="-28,10,0,0" />
+                </Image.Margin>
+              </Image>
+
+            </StackLayout>
+
+            <BoxView x:Name="boxviewPassword"
+                     HeightRequest="1" WidthRequest="1"
+             BackgroundColor="#2F6686"
+             Margin="5,-25,25,0"></BoxView>
+          </StackLayout>
+
+          <Image Source="login_bt.png" x:Name="btnlogin"
+                
+                VerticalOptions="EndAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Aspect="AspectFill">
+            <Image.Margin>
+              <OnPlatform x:TypeArguments="Thickness"
+                                  iOS="-20,33,20,0"
+                                  Android="0,40,0,0"
+                                  WinPhone="0,40,0,0" />
+            </Image.Margin>
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="btnloginclick"
+                      NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+            <Image.HeightRequest>
+              <OnPlatform x:TypeArguments="x:Double" Android="90" iOS="83" WinPhone="80"/>
+            </Image.HeightRequest>
+            <Image.WidthRequest>
+              <OnPlatform x:TypeArguments="x:Double" Android="300" iOS="300" WinPhone="300"/>
+            </Image.WidthRequest>
+          </Image>
+        </StackLayout>
+      </RelativeLayout>
+    </ScrollView>
+  </ContentPage.Content>
+
+</ContentPage>

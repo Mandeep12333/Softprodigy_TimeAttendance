@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <ManifestDocuments>
+    <ManifestDocument>obj\Release\__library_projects__\Refractored.GifImageView\library_project_imports\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Release\__library_projects__\Refractored.GifImageView\library_project_imports\aapt\AndroidManifest.xml</ManifestDocument>
+  </ManifestDocuments>
+  <NativeLibraries />
+  <Jars>
+    <Jar>obj\Release\__library_projects__\FormsViewGroup\library_project_imports\formsviewgroup.jar</Jar>
+    <Jar>obj\Release\__library_projects__\OkHttp\library_project_imports\okhttp-2.3.0-jar-with-dependencies.jar</Jar>
+    <Jar>obj\Release\__library_projects__\Refractored.GifImageView\library_project_imports\bin\classes.jar</Jar>
+  </Jars>
+</Paths>

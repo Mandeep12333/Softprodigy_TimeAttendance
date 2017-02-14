@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IMobileService" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://94.200.216.6:8085/GATAC_API/MobileService.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IMobileService"
+                contract="IMobileService" name="BasicHttpBinding_IMobileService" />
+        </client>
+        <extensions />
+    </system.serviceModel>
+</configuration>

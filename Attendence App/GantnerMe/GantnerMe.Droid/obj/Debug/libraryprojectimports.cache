@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\FFImageLoading.Forms.Droid\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\FFImageLoading.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\FFImageLoading.Transformations\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\ModernHttpClient\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.Connectivity\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.CurrentActivity\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.Geolocator\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.Permissions\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.SecureStorage\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Refractored.GifImageView\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Rg.Plugins.Popup.Droid\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Rg.Plugins.Popup.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\SQLite.Net.Platform.XamarinAndroid\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Syncfusion.SfDataGrid.XForms.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Xamarin.Auth.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\FFImageLoading.Forms.Droid\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\FFImageLoading.Platform\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\FFImageLoading.Transformations\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\ModernHttpClient\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.Connectivity\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.CurrentActivity\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.Geolocator\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.Permissions\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.SecureStorage\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Refractored.GifImageView\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Rg.Plugins.Popup.Droid\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Rg.Plugins.Popup.Platform\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\SQLite.Net.Platform.XamarinAndroid\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Syncfusion.SfDataGrid.XForms.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Xamarin.Auth.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\FFImageLoading.Forms.Droid.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\FFImageLoading.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\FFImageLoading.Transformations.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\ModernHttpClient.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.Connectivity.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.CurrentActivity.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.Geolocator.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.Permissions.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Plugin.SecureStorage.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Refractored.GifImageView.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Rg.Plugins.Popup.Droid.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Rg.Plugins.Popup.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\SQLite.Net.Platform.XamarinAndroid.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Syncfusion.SfDataGrid.XForms.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Xamarin.Auth.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Xamarin forms Project\Softprodigy Context App\GantnerMe\GantnerMe.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>

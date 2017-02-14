@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="GantnerMe.LoadingPopupPage"  CloseWhenBackgroundIsClicked="False">
+
+  <pages:PopupPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="EntryStyle" TargetType="Entry">
+        <Setter Property="PlaceholderColor" Value="#9cdaf1"/>
+        <Setter Property="TextColor" Value="#7dbbe6"/>
+      </Style>
+    </ResourceDictionary>
+  </pages:PopupPage.Resources>
+  
+  <ActivityIndicator
+    x:Name="pageloadindicator"
+    IsRunning="True"
+    IsEnabled="True"
+    VerticalOptions="Center"
+    HorizontalOptions="Center"
+    HeightRequest="70"
+    WidthRequest="70"/>
+  <!--<StackLayout HorizontalOptions="Center" HeightRequest="100"
+              WidthRequest="220" BackgroundColor="White" VerticalOptions="Center">
+    <ActivityIndicator
+       x:Name="pageloadindicator"
+       IsRunning="True"
+       IsEnabled="True"
+       VerticalOptions="Center"
+       HorizontalOptions="Center"
+       HeightRequest="60"
+       WidthRequest="60"></ActivityIndicator>
+
+    <Label Margin="15,0,0,0" TextColor="Green" HorizontalOptions="Center" FontSize="20" Text="Loading...."></Label>
+  </StackLayout>-->
+</pages:PopupPage>

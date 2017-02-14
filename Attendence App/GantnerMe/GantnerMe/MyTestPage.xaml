@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:common="clr-namespace:UXDivers.Gorilla;assembly=UXDivers.Gorilla.Common"
+             x:Class="GantnerMe.MyTestPage"  BackgroundColor="Black">
+
+
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <common:JsonData x:Key="_people">
+        [
+        {
+        "ReasonNameIn":"User Profile",
+        "IconSource": "user_profile_ic_menu.png",
+        "Rightarrow": "right_arrow_ic.png"
+        },
+        {
+        "ReasonNameIn":"User Profile",
+        "IconSource": "user_profile_ic_menu.png",
+        "Rightarrow": "right_arrow_ic.png"
+        },
+        {
+        "ReasonNameIn":"User Profile",
+        "IconSource": "user_profile_ic_menu.png",
+        "Rightarrow": "right_arrow_ic.png"
+        },
+        {
+        "ReasonNameIn":"User Profile",
+        "IconSource": "user_profile_ic_menu.png",
+        "Rightarrow": "right_arrow_ic.png"
+        }
+
+        ]
+      </common:JsonData>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+
+  <RelativeLayout>
+    <RelativeLayout.GestureRecognizers>
+      <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnCloseButtonTapped"/>
+    </RelativeLayout.GestureRecognizers>
+    <Image Source="pop_up_bg.png"  WidthRequest="400" 
+           HeightRequest="260"
+           Aspect="AspectFill">
+      <StackLayout.Margin>
+        <OnPlatform x:TypeArguments="Thickness"
+                            iOS="0,120,0,0"
+                            Android="0,175,0,0"
+                            WinPhone="0,175,0,0" />
+      </StackLayout.Margin>
+    </Image>
+    <StackLayout>
+      <StackLayout.Margin>
+        <OnPlatform x:TypeArguments="Thickness"
+                            iOS="30,30,30,0"
+                            Android="30,100,30,0"
+                            WinPhone="30,100,30,0" />
+      </StackLayout.Margin>
+
+      <Frame  VerticalOptions="CenterAndExpand"
+     HorizontalOptions="CenterAndExpand"  HeightRequest="100"
+      BackgroundColor="#D1DFE4">
+        <Frame.Margin>
+          <OnPlatform x:TypeArguments="Thickness"
+                              iOS="10,120,10,10"
+                              Android="10,100,10,10"
+                              WinPhone="10,100,10,10" />
+        </Frame.Margin>
+        <Frame.WidthRequest>
+          <OnPlatform x:TypeArguments="x:Double"
+                      Android="240" iOS="200" WinPhone="240"/>
+        </Frame.WidthRequest>
+        <StackLayout  Spacing="20">
+          <Label x:Name="lbleditconfig" Margin="10,0,0,0"
+                 HorizontalOptions="Start" Text="Edit Configurations"
+                 TextColor="#2F6686">
+            <Label.FontSize>
+              <OnPlatform x:TypeArguments="x:Double">
+                <OnPlatform.iOS>16</OnPlatform.iOS>
+                <OnPlatform.Android>18</OnPlatform.Android>
+                <OnPlatform.WinPhone>18</OnPlatform.WinPhone>
+              </OnPlatform>
+            </Label.FontSize>
+          </Label>
+          <Entry
+  HorizontalOptions="Center"
+  x:Name="Configlinkurl"
+  TextColor="#2F6686"
+  HeightRequest="45"
+  WidthRequest="230"
+  PlaceholderColor="#2F6686"
+  Placeholder="http://" />
+          <BoxView Margin="10,-30,20,0"  x:Name="boxviewconfigurl" HeightRequest="1" WidthRequest="1"
+             BackgroundColor="#2F6686"
+                   ></BoxView>
+        </StackLayout>
+      </Frame>
+      <StackLayout Margin="10,0,0,0">
+        <Button
+      HorizontalOptions="Start"
+      BackgroundColor="#2F6686"
+      x:Name="EditSaveButton"
+      Clicked="OnSaveclick"
+      TextColor="White"
+      Text="Save">
+          <Button.HeightRequest>
+            <OnPlatform x:TypeArguments="x:Double" Android="50" iOS="40"
+                        WinPhone="40"/>
+          </Button.HeightRequest>
+          <Button.WidthRequest>
+            <OnPlatform x:TypeArguments="x:Double"
+                        Android="270" iOS="240" WinPhone="260"/>
+          </Button.WidthRequest>
+        </Button>
+      </StackLayout>
+    </StackLayout>
+    <ContentView
+  AbsoluteLayout.LayoutFlags="PositionProportional"
+  AbsoluteLayout.LayoutBounds="1, 0, -1, -1">
+      <ContentView.GestureRecognizers>
+        <TapGestureRecognizer Tapped="OnCloseButtonTapped"/>
+      </ContentView.GestureRecognizers>
+      <Image
+x:Name="CloseImage"
+HeightRequest="20"
+WidthRequest="20" Source="cross_ic.png">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnCloseButtonTapped"/>
+        </Image.GestureRecognizers>
+        <Image.Margin>
+          <OnPlatform x:TypeArguments="Thickness"
+                              iOS="290,125,0,10"
+                              Android="335,180,0,10"
+                              WinPhone="340,180,0,10" />
+        </Image.Margin>
+      </Image>
+    </ContentView>
+  </RelativeLayout>
+
+
+</ContentPage>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                x:Class="GantnerMe.EditLanguagePage">
+
+  <!--Animations use example-->
+  <pages:PopupPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="EntryStyle" TargetType="Entry">
+        <Setter Property="PlaceholderColor" Value="#9cdaf1"/>
+        <Setter Property="TextColor" Value="#7dbbe6"/>
+      </Style>
+    </ResourceDictionary>
+  </pages:PopupPage.Resources>
+  <pages:PopupPage.Animation>
+    <animations:ScaleAnimation
+  PositionIn="Center"
+  PositionOut="Center"
+  ScaleIn="1.2"
+  ScaleOut="0.8"
+  DurationIn="250"
+  DurationOut="200"
+  EasingIn="SinOut"
+  EasingOut="SinIn"
+  HasBackgroundAnimation="True"/>
+  </pages:PopupPage.Animation>
+  <!-- Content -->
+
+ 
+  <RelativeLayout>
+    <RelativeLayout.GestureRecognizers>
+      <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnCloseButtonTapped"/>
+    </RelativeLayout.GestureRecognizers>
+    <Image Source="pop_up_bg.png" WidthRequest="400" Margin="0,175,0,0"
+           HeightRequest="270"
+           Aspect="AspectFill">
+    </Image>
+    <StackLayout>
+      <StackLayout.Margin>
+        <OnPlatform x:TypeArguments="Thickness"
+                            iOS="15,110,30,0"
+                            Android="30,90,30,0"
+                            WinPhone="30,90,30,0" />
+      </StackLayout.Margin>
+      <Frame Margin="10,100,10,10" VerticalOptions="CenterAndExpand"
+     HorizontalOptions="CenterAndExpand"
+      BackgroundColor="#D1DFE4">
+        <Frame.HeightRequest>
+          <OnPlatform x:TypeArguments="x:Double"
+                      Android="140" iOS="130" WinPhone="140"/>
+        </Frame.HeightRequest>
+        <Frame.WidthRequest>
+          <OnPlatform x:TypeArguments="x:Double"
+                      Android="250" iOS="230" WinPhone="250"/>
+        </Frame.WidthRequest>
+
+        <StackLayout  Spacing="20">
+          <Label Margin="10,0,0,0" HorizontalOptions="StartAndExpand"
+                 x:Name="lblselectlanguage" Text="Select your Language"
+                 TextColor="#2F6686" FontSize="18"></Label>
+          <StackLayout Orientation="Horizontal">
+            <StackLayout.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="BtnEnglishClick"
+                      NumberOfTapsRequired="1" />
+            </StackLayout.GestureRecognizers>
+
+            <Label Margin="10,0,0,0" Text="English"
+                 FontSize="17"
+                 HorizontalOptions="Start" TextColor="#2F6686">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                        Tapped="BtnEnglishClick"
+                        NumberOfTapsRequired="1" />
+              </Label.GestureRecognizers>
+            </Label>
+            <Image Source="select_tick.png" x:Name="imageEnglish"
+                   Margin="117,0,0,0"
+                 WidthRequest="20" HeightRequest="20"
+                   HorizontalOptions="CenterAndExpand"
+         VerticalOptions="Center"/>
+          </StackLayout>
+
+          <BoxView  x:Name="serverlinkboxview" HeightRequest="1" WidthRequest="1"
+          BackgroundColor="#2F6686"
+          Margin="10,-20,20,10"></BoxView>
+          <StackLayout Orientation="Horizontal">
+            <StackLayout.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="BtnArabicClick"
+                      NumberOfTapsRequired="1" />
+            </StackLayout.GestureRecognizers>
+            <Label Margin="10,0,0,0"  Text="العربية"
+                 FontSize="17"
+                 HorizontalOptions="Start" TextColor="#2F6686">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer
+                        Tapped="BtnArabicClick"
+                        NumberOfTapsRequired="1" />
+              </Label.GestureRecognizers>
+            </Label>
+            <Image Source="select_tick.png" x:Name="imageArabic"
+                  Margin="123,0,0,0"
+                 WidthRequest="20" HeightRequest="20"
+                   HorizontalOptions="CenterAndExpand"
+               />
+          </StackLayout>
+          <BoxView  x:Name="serverlinkboxview1" HeightRequest="1" WidthRequest="1"
+         BackgroundColor="#2F6686"
+         Margin="10,-20,20,10"></BoxView>
+        </StackLayout>
+      </Frame>
+      <StackLayout Margin="12,-5,0,0">
+        <StackLayout.Margin>
+          <OnPlatform x:TypeArguments="Thickness"
+                              iOS="14,-5,0,0"
+                              Android="20,-5,0,0"
+                              WinPhone="12,-5,0,0" />
+        </StackLayout.Margin>
+        <Button
+      HorizontalOptions="Start"
+      BackgroundColor="#2F6686"
+      Clicked="OnEditLanguage"
+      x:Name="EditSaveButton"
+      TextColor="White"
+      Text="Save">
+          <Button.HeightRequest>
+            <OnPlatform x:TypeArguments="x:Double" Android="50" iOS="40" WinPhone="40"/>
+          </Button.HeightRequest>
+          <Button.WidthRequest>
+            <OnPlatform x:TypeArguments="x:Double" Android="260" iOS="260" WinPhone="260"/>
+          </Button.WidthRequest>
+        </Button>
+      </StackLayout>
+    </StackLayout>
+    <ContentView
+  AbsoluteLayout.LayoutFlags="PositionProportional"
+  AbsoluteLayout.LayoutBounds="1, 0, -1, -1">
+      <ContentView.GestureRecognizers>
+        <TapGestureRecognizer Tapped="OnCloseButtonTapped"/>
+      </ContentView.GestureRecognizers>
+      <Image
+x:Name="CloseImage"
+VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand"
+HeightRequest="20"
+WidthRequest="20"
+Source="cross_ic.png">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnCloseButtonTapped"/>
+        </Image.GestureRecognizers>
+        <Image.Margin>
+          <OnPlatform x:TypeArguments="Thickness"
+                              iOS="290,180,0,10"
+                              Android="335,180,0,10"
+                              WinPhone="340,180,0,10" />
+        </Image.Margin>
+      </Image>
+    </ContentView>
+  </RelativeLayout>
+  
+</pages:PopupPage>

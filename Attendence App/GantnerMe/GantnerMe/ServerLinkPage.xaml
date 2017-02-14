@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GantnerMe.ServerLinkPage" BackgroundImage="select_language_bg.png">
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <OnPlatform x:Key="FontFamily" x:TypeArguments="x:String">
+        <OnPlatform.Android>Droid Sans Mono</OnPlatform.Android>
+        <OnPlatform.WinPhone>Comic Sans MS</OnPlatform.WinPhone>
+      </OnPlatform>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+            iOS="10,5,10,10"
+            Android="10,0,10,10"
+            WinPhone="20,20,20,20"/>
+  </ContentPage.Padding>
+
+  <ContentPage.Content>
+
+    <RelativeLayout>
+      <Image    Source="inner_box_small.png"
+             Aspect="AspectFit" HeightRequest="200">
+        <Image.Margin>
+          <OnPlatform x:TypeArguments="Thickness"
+                              iOS="10,180,10,0"
+                              Android="10,200,10,0"
+                              WinPhone="10,200,10,0" />
+        </Image.Margin>
+      <Image.WidthRequest>
+        <OnPlatform x:TypeArguments="x:Double" Android="300" iOS="270" WinPhone="300"/>
+      </Image.WidthRequest>
+
+      </Image>
+      
+      <ScrollView>
+
+        <StackLayout Margin="10,10,10,50" AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0,0,1,1" Spacing="10"
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="CenterAndExpand">
+
+          <Image  Source="inner_logo.png"
+        HeightRequest="60" Aspect="AspectFit" HorizontalOptions="CenterAndExpand"
+            WidthRequest="100">
+            <Image.Margin>
+              <OnPlatform x:TypeArguments="Thickness"
+                                  iOS="0,70,30,50"
+                                  Android="10,70,10,50"
+                                  WinPhone="10,70,10,50" />
+            </Image.Margin>
+          </Image>
+
+         
+            <StackLayout
+                           HorizontalOptions="CenterAndExpand"
+                          HeightRequest="150"  Spacing="20">
+              <StackLayout.Margin>
+                <OnPlatform x:TypeArguments="Thickness"
+                                    iOS="30,10,40,10"
+                                    Android="0,30,40,10"
+                                    WinPhone="40,30,0,10" />
+              </StackLayout.Margin>
+
+              <Label  FontAttributes="Bold" Margin="5,30,0,0"
+                     FontFamily="{StaticResource FontFamily}"
+                     Text="Please enter server link"
+                     x:Name="lblenterserverlink"
+                     HorizontalOptions="StartAndExpand"
+                     TextColor="#2F6686">
+                <Label.FontSize>
+                  <OnPlatform x:TypeArguments="x:Double">
+                    <OnPlatform.iOS>16</OnPlatform.iOS>
+                    <OnPlatform.Android>17</OnPlatform.Android>
+                    <OnPlatform.WinPhone>17</OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Label.FontSize>
+              </Label>
+
+              <Entry  FontAttributes="Italic"
+                     FontSize="16" 
+                     x:Name="txtserverlink"
+                     Keyboard="Default"  Text="http://118.102.179.247:7179/GATAC_API/Mobile/" Placeholder="http://">
+                <Entry.WidthRequest>
+                  <OnPlatform x:TypeArguments="x:Double"
+                               iOS="220" WinPhone="300"/>
+                </Entry.WidthRequest>
+                <Entry.Margin>
+                  <OnPlatform x:TypeArguments="Thickness"
+                                      iOS="0,0,0,0"
+                                      Android="0,0,10,0"
+                                      WinPhone="-5,0,0,0" />
+                </Entry.Margin>
+                <Entry.TextColor>
+                  <OnPlatform x:TypeArguments="Color"
+                      iOS="#2F6686"
+                       WinPhone="Black"
+                      Android="#2F6686">
+                  </OnPlatform>
+                </Entry.TextColor>
+                <Entry.PlaceholderColor>
+                  <OnPlatform x:TypeArguments="Color"
+                      iOS="#2F6686"
+                       WinPhone="#174A8B"
+                      Android="#2F6686">
+                  </OnPlatform>
+                </Entry.PlaceholderColor>
+              </Entry>
+              <BoxView  x:Name="serverlinkboxview" HeightRequest="1" WidthRequest="1"
+               BackgroundColor="#2F6686"
+               >
+                <BoxView.Margin>
+                  <OnPlatform x:TypeArguments="Thickness"
+                                      iOS="5,-25,80,10"
+                                      Android="5,-25,0,10"
+                                      WinPhone="5,-25,80,10" />
+                </BoxView.Margin>
+              </BoxView>
+            </StackLayout>
+
+         
+          <!--<Button Text="Next" Margin="10,-15,10,0" BorderRadius="10"
+                  x:Name="btnserversubmit"
+                  Clicked="btnServerSubmit" VerticalOptions="Start"
+                  Grid.Column="0" HorizontalOptions="Center"
+                  FontSize="20"
+                  WidthRequest="300"  HeightRequest="50"
+        TextColor="White"
+          BackgroundColor="#2F6686"
+               />-->
+          <Image Source="next_bt.png" x:Name="imgserversubmit"
+                 VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                  Aspect="AspectFill">
+            <Image.Margin>
+              <OnPlatform x:TypeArguments="Thickness"
+                                  iOS="-10,-15,0,0"
+                                  Android="0,-10,30,0"
+                                  WinPhone="0,-10,30,0" />
+            </Image.Margin>
+            <Image.HeightRequest>
+              <OnPlatform x:TypeArguments="x:Double" Android="88" iOS="78" WinPhone="88"/>
+            </Image.HeightRequest>
+            <Image.WidthRequest>
+              <OnPlatform x:TypeArguments="x:Double" Android="300" iOS="300" WinPhone="300"/>
+            </Image.WidthRequest>
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer
+                      Tapped="btnServerSubmit"
+                      NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+          </Image>
+        </StackLayout>
+      </ScrollView>
+    </RelativeLayout>
+  </ContentPage.Content>
+
+</ContentPage>

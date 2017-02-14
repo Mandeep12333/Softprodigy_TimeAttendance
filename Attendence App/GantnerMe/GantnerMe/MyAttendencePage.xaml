@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             xmlns:local ="clr-namespace:GantnerMe;assembly=GantnerMe"
+             x:Class="GantnerMe.MyAttendencePage"  BackgroundImage="select_language_bg.png">
+
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:Dark x:Key="dark" />
+      <OnPlatform x:Key="FontFamily" x:TypeArguments="x:String">
+        <OnPlatform.Android>monospace</OnPlatform.Android>
+        <OnPlatform.iOS>MarkerFelt-Thin</OnPlatform.iOS>
+        <OnPlatform.WinPhone>Comic Sans MS</OnPlatform.WinPhone>
+      </OnPlatform>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="10,15,10,10"
+                Android="10,20,10,10"
+                WinPhone="20,20,20,20"/>
+  </ContentPage.Padding>
+
+  <ContentPage.Content>
+    <StackLayout>
+      <StackLayout  Orientation="Horizontal">
+        <StackLayout.Margin>
+          <OnPlatform x:TypeArguments="Thickness"
+                              iOS="5,-20,5,0"
+                              Android="5,-30,5,0"
+                              WinPhone="5,-30,5,0" />
+        </StackLayout.Margin>
+        
+        <Image  x:Name="imgbackbutton"
+             Source="back_arrow.png"
+               HorizontalOptions="StartAndExpand"
+               HeightRequest="25" WidthRequest="35"
+                  Aspect="AspectFit">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer
+                    Tapped="Backiconclick"
+                    NumberOfTapsRequired="1" />
+          </Image.GestureRecognizers>
+        </Image>
+        <Image
+                 Margin="0,0,0,0" Source="inner_logo.png"
+                      HorizontalOptions="CenterAndExpand" HeightRequest="70"
+                 WidthRequest="70"
+                         Aspect="AspectFit">
+
+        </Image>
+        <Image  x:Name="Homeicon"
+               Source="home_ic.png"
+                 HorizontalOptions="EndAndExpand"
+                 HeightRequest="25" WidthRequest="35"
+                    Aspect="AspectFit">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer
+                    Tapped="HomeIconClick1"
+                    NumberOfTapsRequired="1" />
+          </Image.GestureRecognizers>
+        </Image>
+      </StackLayout>
+
+      <ScrollView>
+        <StackLayout  Margin="10,20,10,10"   Spacing="25">
+          <Image Margin="10,-5,10,10" HeightRequest="50" 
+                 HorizontalOptions="CenterAndExpand" WidthRequest="120" 
+                 Source="inner_logo.png"
+           Aspect="AspectFit"></Image>
+          <Label Margin="10,-25,10,0" x:Name="lblmyattendence" Text="My Attendence"
+                 TextColor="White"  HorizontalOptions="Center">
+            <Label.FontSize>
+              <OnPlatform x:TypeArguments="x:Double">
+                <OnPlatform.iOS>16</OnPlatform.iOS>
+                <OnPlatform.Android>18</OnPlatform.Android>
+                <OnPlatform.WinPhone>17</OnPlatform.WinPhone>
+              </OnPlatform>
+            </Label.FontSize>
+          </Label>
+          <StackLayout Orientation="Horizontal">
+            <Label Margin="50,-10,0,0" x:Name="lblfrom" Text="From"
+                     TextColor="#2F6686" FontFamily="{StaticResource FontFamily}"
+                     HorizontalOptions="Start" Font="15"></Label>
+            <Label Margin="110,-10,0,0" x:Name="lblto" Text="To"
+                   TextColor="#2F6686" FontFamily="{StaticResource FontFamily}"
+                     HorizontalOptions="Start" Font="15"></Label>
+          </StackLayout>
+
+          <StackLayout  Orientation="Horizontal">
+            <StackLayout.Margin>
+              <OnPlatform x:TypeArguments="Thickness"
+                                  iOS="0,-15,10,10"
+                                  Android="10,-15,10,10"
+                                  WinPhone="10,-15,10,10" />
+            </StackLayout.Margin>
+            <DatePicker WidthRequest="120" Margin="10,0,10,10" 
+            VerticalOptions="Start" HorizontalOptions="Start"
+            x:Name="FromDatepicker">
+              <DatePicker.HeightRequest>
+                <OnPlatform x:TypeArguments="x:Double"
+                            Android="40" iOS="30" WinPhone="40"/>
+              </DatePicker.HeightRequest>
+
+              <DatePicker.Format>MM-dd-yyyy</DatePicker.Format>
+              <!--<DatePicker.MinimumDate>
+              <sys:DateTime x:FactoryMethod="Parse">
+                <x:Arguments>
+                  <x:String>Dec 2 2016</x:String>
+                </x:Arguments>
+              </sys:DateTime>
+            </DatePicker.MinimumDate>
+            <DatePicker.MaximumDate>
+              <sys:DateTime x:FactoryMethod="Parse">
+                <x:Arguments>
+                  <x:String>Dec 31 2050</x:String>
+                </x:Arguments>
+              </sys:DateTime>
+            </DatePicker.MaximumDate>-->
+            </DatePicker>
+
+            <DatePicker WidthRequest="120" Margin="10,0,10,10" 
+            VerticalOptions="Start" HorizontalOptions="End"
+            x:Name="ToDatepicker">
+              <DatePicker.HeightRequest>
+                <OnPlatform x:TypeArguments="x:Double"
+                            Android="40" iOS="30" WinPhone="40"/>
+              </DatePicker.HeightRequest>
+              <DatePicker.Format>MM-dd-yyyy</DatePicker.Format>
+              <!--<DatePicker.MinimumDate>
+              <sys:DateTime x:FactoryMethod="Parse">
+                <x:Arguments>
+                  <x:String>Dec 2 2016</x:String>
+                </x:Arguments>
+              </sys:DateTime>
+            </DatePicker.MinimumDate>
+            <DatePicker.MaximumDate>
+              <sys:DateTime x:FactoryMethod="Parse">
+                <x:Arguments>
+                  <x:String>Dec 31 2050</x:String>
+                </x:Arguments>
+              </sys:DateTime>
+            </DatePicker.MaximumDate>-->
+            </DatePicker>
+
+          </StackLayout>
+
+          <StackLayout  VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+            <syncfusion:SfDataGrid  HeightRequest="240"
+                                   IsVisible="False" Margin="10,-28,10,10"
+                                    AutoGenerateColumns="False" 
+                                    GridStyle="{StaticResource dark}"
+                                   HorizontalOptions="FillAndExpand"
+                                   VerticalOptions="FillAndExpand"
+                                   ColumnSizer="Star" x:Name="dataGrid">
+              <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">
+                <syncfusion:GridTextColumn  Width="80" HeaderText="Date"
+                                           MappingName="Date" />
+                <syncfusion:GridTextColumn Width="80" HeaderText="Time In"
+                                           MappingName="TimeIn" />
+                <syncfusion:GridTextColumn Width="70" HeaderText="Time Out"
+                                           MappingName="TimeOut" />
+                <syncfusion:GridTextColumn Width="80" HeaderText="Total"
+                                           MappingName="Total" />
+              </syncfusion:SfDataGrid.Columns>
+            </syncfusion:SfDataGrid>
+          </StackLayout>
+        
+        </StackLayout>
+      </ScrollView>
+    </StackLayout>
+  </ContentPage.Content>
+
+</ContentPage>

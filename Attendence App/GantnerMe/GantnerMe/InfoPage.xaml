@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:GantnerMe;assembly=GantnerMe"
+             x:Class="GantnerMe.InfoPage" BackgroundImage="select_language_bg.png">
+
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <OnPlatform x:Key="FontFamily" x:TypeArguments="x:String">
+        <OnPlatform.Android>Droid Sans Mono</OnPlatform.Android>
+        <OnPlatform.WinPhone>Comic Sans MS</OnPlatform.WinPhone>
+      </OnPlatform>
+      <OnPlatform x:Key="labelSpacing" x:TypeArguments="x:Double">
+        <OnPlatform.iOS>4</OnPlatform.iOS>
+        <OnPlatform.Android>2</OnPlatform.Android>
+        <OnPlatform.WinPhone>3</OnPlatform.WinPhone>
+      </OnPlatform>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+            iOS="10,15,10,10"
+            Android="10,15,10,10"
+            WinPhone="20,20,20,20"/>
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <StackLayout>
+      <StackLayout  Orientation="Horizontal">
+        <StackLayout.Margin>
+          <OnPlatform x:TypeArguments="Thickness"
+                              iOS="5,-20,5,0"
+                              Android="5,-30,5,0"
+                              WinPhone="5,-30,5,0" />
+        </StackLayout.Margin>
+      <Image  x:Name="imgbackbutton"
+            Source="back_arrow.png"
+              HorizontalOptions="StartAndExpand"
+              HeightRequest="25" WidthRequest="35"
+                 Aspect="AspectFit">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+                  Tapped="Backiconclick"
+                  NumberOfTapsRequired="1" />
+        </Image.GestureRecognizers>
+      </Image>
+      <Image
+                Source="inner_logo.png"
+                    HorizontalOptions="CenterAndExpand" HeightRequest="70"
+               WidthRequest="70"
+                       Aspect="AspectFit">
+
+      </Image>
+      <Image  x:Name="Homeicon"
+              Source="home_ic.png"
+               HorizontalOptions="EndAndExpand"
+               HeightRequest="25" WidthRequest="35"
+                  Aspect="AspectFit">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+                  Tapped="HomeIconClick1"
+                  NumberOfTapsRequired="1" />
+        </Image.GestureRecognizers>
+      </Image>
+      </StackLayout>
+        <ScrollView>
+      <StackLayout Margin="10,0,0,10" Spacing="5"  VerticalOptions="FillAndExpand" 
+                   HorizontalOptions="FillAndExpand">
+        <StackLayout  Orientation="Vertical">
+
+          <StackLayout HorizontalOptions="FillAndExpand" Margin="0,0,0,0" Orientation="Vertical" >
+            <local:LineSpacingLabel FontFamily="{StaticResource FontFamily}" LineSpacing="{StaticResource  labelSpacing}"
+                                    x:Name="lblaboutustext"  
+                           Text="SoftProdigy came into existence in 2006, guided by the idea of delivering high quality web designs, 
+                           mobile development solutions, as well as innovative internet-driven marketing and sales strategies. 
+                           The growth curve continued to rise steeply over the years for us, thanks to our penchant for exceeding the 
+                           expectations of our clients. In our relatively young history, we have been a key to the never ending success 
+                           stories of many internet businesses and successfully implemented projects."
+                                    TextColor="White"   LineBreakMode="WordWrap">
+              <Label.FontSize>
+                <OnPlatform x:TypeArguments="x:Double"
+                            iOS="15"
+                            Android="16" WinPhone="18" />
+              </Label.FontSize>
+            </local:LineSpacingLabel>
+
+            <local:LineSpacingLabel FontFamily="{StaticResource FontFamily}" 
+                                    LineSpacing="{StaticResource  labelSpacing}" 
+                                    x:Name="lblaboutust1"
+             Text="Quality and overall performance is our paramount concern. We focus on creating effectively 
+             informative architecture, aesthetically appealing visual designs, engaging content and great interactivity.More than 
+             anything else, we believe in making things happen! We’ve been instrumental in bringing to life many amazing projects"
+                                    TextColor="White"  LineBreakMode="WordWrap">
+              <Label.FontSize>
+                <OnPlatform x:TypeArguments="x:Double"
+                            iOS="15"
+                            Android="16" WinPhone="18" />
+              </Label.FontSize>
+            </local:LineSpacingLabel>
+            <local:LineSpacingLabel  FontFamily="{StaticResource FontFamily}" LineSpacing="{StaticResource  labelSpacing}" x:Name="lblaboutust2"
+             Text="At SoftProdigy, we take pride in earning and keeping the trust of our 
+             customers. We value their belief in us and strive hard to preserve it.Integrity and ethical standards is at the heart of 
+             our every relationship and business dealings at SoftProdigy. We do not compromise on our
+             principles and hold them higher than profits. We strongly believe that honest relationships and trust are essential for long term business. 
+             We act with our customer’s best interests at heart."
+                                    TextColor="White"  LineBreakMode="WordWrap">
+              <Label.FontSize>
+                <OnPlatform x:TypeArguments="x:Double"
+                            iOS="15"
+                            Android="16" WinPhone="18" />
+              </Label.FontSize>
+            </local:LineSpacingLabel>
+          </StackLayout>
+        </StackLayout>
+      </StackLayout>
+    </ScrollView>
+    </StackLayout>
+  </ContentPage.Content>
+  
+</ContentPage>
